@@ -15,40 +15,35 @@ const ProblemThree = () => {
         setSequenceA([...sequenceA, newNumber]);
     };
 
-    // Função para completar a sequência B
     const completeSequenceB = () => {
         const lastNumber = sequenceB[sequenceB.length - 1];
-        const newNumber = lastNumber * 2; // Multiplica o último número da sequência por 2
-        setSequenceB([...sequenceB, newNumber]); // Atualiza o estado da sequência B com o novo número
+        const newNumber = lastNumber * 2;
+        setSequenceB([...sequenceB, newNumber]);
     };
 
-    // Função para completar a sequência C
     const completeSequenceC = () => {
         const lastNumber = sequenceC[sequenceC.length - 1];
-        const newNumber = Math.pow(Math.sqrt(lastNumber) + 1, 2); // Calcula o quadrado do próximo número perfeito
-        setSequenceC([...sequenceC, newNumber]); // Atualiza o estado da sequência C com o novo número
+        const newNumber = Math.pow(Math.sqrt(lastNumber) + 1, 2);
+        setSequenceC([...sequenceC, newNumber]);
     };
 
-    // Função para completar a sequência D
     const completeSequenceD = () => {
         const lastNumber = sequenceD[sequenceD.length - 1];
-        const newNumber = Math.pow(Math.sqrt(lastNumber) + 2, 2); // Calcula o quadrado do próximo número perfeito ímpar
-        setSequenceD([...sequenceD, newNumber]); // Atualiza o estado da sequência D com o novo número
+        const newNumber = Math.pow(Math.sqrt(lastNumber) + 2, 2);
+        setSequenceD([...sequenceD, newNumber]);
     };
 
-    // Função para completar a sequência E
     const completeSequenceE = () => {
         const lastNumber = sequenceE[sequenceE.length - 1];
         const penultimateNumero = sequenceE[sequenceE.length - 2];
-        const newNumber = lastNumber + penultimateNumero; // Soma os dois últimos números da sequência
-        setSequenceE([...sequenceE, newNumber]); // Atualiza o estado da sequência E com o novo número
+        const newNumber = lastNumber + penultimateNumero;
+        setSequenceE([...sequenceE, newNumber]);
     };
 
-    // Função para completar a sequência F
     const completeSequenceF = () => {
         const lastNumber = sequenceF[sequenceF.length - 1];
-        const newNumber = lastNumber + 1; // Adiciona 1 ao último número da sequência
-        setSequenceF([...sequenceF, newNumber]); // Atualiza o estado da sequência F com o novo número
+        const newNumber = lastNumber + 1;
+        setSequenceF([...sequenceF, newNumber]);
     };
 
     return (
@@ -58,32 +53,26 @@ const ProblemThree = () => {
                 <li>
                     a: {sequenceA.join(", ")}
                     <button onClick={completeSequenceA}>Completar</button>{" "}
-                    {/* Botão para completar a sequência A */}
                 </li>
                 <li>
                     b: {sequenceB.join(", ")}
                     <button onClick={completeSequenceB}>Completar</button>{" "}
-                    {/* Botão para completar a sequência B */}
                 </li>
                 <li>
                     c: {sequenceC.join(", ")}
                     <button onClick={completeSequenceC}>Completar</button>{" "}
-                    {/* Botão para completar a sequência C */}
                 </li>
                 <li>
                     d: {sequenceD.join(", ")}
                     <button onClick={completeSequenceD}>Completar</button>{" "}
-                    {/* Botão para completar a sequência D */}
                 </li>
                 <li>
                     e: {sequenceE.join(", ")}
                     <button onClick={completeSequenceE}>Completar</button>{" "}
-                    {/* Botão para completar a sequência E */}
                 </li>
                 <li>
                     f: {sequenceF.join(", ")}
                     <button onClick={completeSequenceF}>Completar</button>{" "}
-                    {/* Botão para completar a sequência F */}
                 </li>
             </ul>
         </div>
