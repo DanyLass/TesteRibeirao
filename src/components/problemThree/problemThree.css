@@ -1,0 +1,28 @@
+.problem-three-container {
+    margin-bottom: 30px;
+}
+
+.problem-three-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.problem-three-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.problem-three-container ul li {
+    margin-bottom: 10px;
+}
+
+.problem-three-container button {
+    padding: 7px 12px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.problem-three-container button:hover {
+    background-color: #0056b3;
+}
